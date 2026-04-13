@@ -3,7 +3,7 @@ import csv
 Cap_let = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 Sml_let = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 num = ["1","2","3","4","5","6","7","8","9"]
-symbols =["@","#","$","%","*"]
+symbols =["@","#","$","%","*","&"]
 password = ""
 the_list = []
 for i in range(100):
@@ -23,7 +23,7 @@ for i in range(100):
             choice = r.randint(0,8)
             password += num[choice]
         elif big_choice == 4:
-            choice = r.randint(0,4)
+            choice = r.randint(0,5)
             password += symbols[choice]
     if password in the_list:
         print("invalid")
