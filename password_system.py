@@ -11,7 +11,7 @@ for i in range(100):
     choice = r.randint(0,25)
     temp = Cap_let[choice]
     password+=temp
-    for i in range(7):
+    for i in range(6):
         big_choice = r.randint(1,4)
         if big_choice == 1:
             choice = r.randint(0,25)
